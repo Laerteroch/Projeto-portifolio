@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">'); 
+*{
+    margin: 0;
+}
+
+.hero-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('./pexels-anete-lusina-4792729.jpg');/*carregar imagem depois*/
+    /*EFEITO PARALAX*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10px;
+}
+
+h1{
+    font-family: 'Oswald', sans-serif ;
+    color: #fff;
+    font-size: 60px;
+}
+
+/*header{
+    height: 100px;
+    width: 800px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /*background-color: greenyellow;
+}*/
+
+nav{
+    width: 100%;
+    /*background-color: green;*/
+}
+
+ul{ 
+    display: flex;
+    width: 700px;
+    justify-content: space-between;
+    list-style: none;
+}
+
+li{
+    font-family: 'Oswald', sans-serif;
+    /*list-style: none;*/
+    color: #fff;
+    cursor: pointer;
+    font-size: 21px;
+    transition: .5s;
+}
+
+li:hover{
+    color: aqua;
+}
+
+.arrows{
+    width: 60px;
+    height: 172px;
+    bottom: 20px;
+}
+
+.arrows path{
+    stroke: #fff;
+    fill: transparent;
+    stroke-width: 1px;
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow
+{
+    0% {opacity:0}
+    40% {opacity:1}
+    80% {opacity:0}
+    100% {opacity:0}
+}
+
+@-webkit-keyframes arrow
+{   
+    0% {opacity:0}
+    40% {opacity:1}
+    80% {opacity:0}
+    100% {opacity:0}
+}
+
+.arrows path.a1{
+    animation-delay: -1s;
+    -webkit-animation-delay: -1s;
+}
+
+.arrows path.a2{
+    animation-delay: -0.5s;
+    -webkit-animation-delay: -0.5s;
+}
+
+.arrows path.a3{
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+}
+
+.content-container{
+    height: 100vh;
+}
+
+.profile-container{
+    color: #333;
+    height: 100%;
+    display: flex;
+    align-items: center;/*Ajuste horizontal*/
+    justify-content: center;/*Ajuste vertical*/
+    background-image: url('./tomasz-gawlowski-YDZPdqv3FcA-unsplash.jpg');
+    background-size: cover;
+}
+
+.profile-content{
+    width: 30%;
+}
+
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 700px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.profile-image{
+    width: 150px;
+    height: auto;/*altura da imagem se adapta automaticamente*/
+    border-radius: 50%;/*Imagem fica um circulo perfeito*/
+    border: 4px solid aqua;
+}
+
+.name-text{
+    font-family: 'Oswald', sans-serif;
+    font-size: 21px;
+    margin-top: 15px;
+}
+
+.profile-text{
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    text-align: center;
+    width: 80%;
+    margin-top: 10px;
+}
+
+.profile-button{
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;/*inicialmente sem borda*/
+    background-color: aqua;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    /*Devemos utilizar a menor variação de fonte possivel para tornar o site mais objetivo e suave (clean)*/
+    margin-top: 35px;
+    cursor: pointer;/*Dedinho*/
+}
+
+.divider{
+    width: 100%;
+    height: 2px;
+    margin-top: 0.5px solid #bfbfbf;
+    margin: 20px 0px;/*??*/
+    background-color: black;
+}
+
+.icons-container{
+    display: flex;
+    width: 100%;/*Ocupação da tela Horizontal?*/
+    justify-content: space-around;/*Maior distanciamento horizontal?*/
+
+}
+
+.icon-item{
+    width: 80px;
+    height: auto;/*Altura se adapta conforme o tamanho da largura*/
+}
+/*A PARTIR DAQUI SEGUEM ALTERAÇÕES FEITAS POR MIM 
+Passar depois para projeto original*/
+
+.profile-sinopse{
+    width: 340px;
+    height: 740px;
+    padding: 10px 10px 10px 10px;
+    text-align: justify;
+    font-family: 'Oswald', sans-serif;
+    color: aqua;
+    font-size: 17px;
+    background-color: black;
+}
+
+/*Criar container do mesmo tamanho do conatiner profile para sinopse*/
+
+
+
+
+
+
